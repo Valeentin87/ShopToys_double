@@ -4,17 +4,29 @@ import java.util.Objects;
 
 public class Toy {
     public String name; //название игрушки
+    public String type; // тип игрушки
     public long id; //уникальный номер товара (игрушки)
     double price; //цена товара
-    public Toy(long id, String name, double price){
+    public Toy(long id, String name, String type, double price){
         this.id = id;
         this.name = name;
         this.price = price;
+        this.type = type;
     }
+
+
 
     // геттеры
     public String getName() {
         return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public long getId() {
@@ -40,7 +52,7 @@ public class Toy {
 
     @Override
     public String toString() {
-        return String.format("Игрушка: %s Цена: %f",name,price);
+        return String.format("%s: %s Цена: %f",type,name,price);
     }
 
     @Override
