@@ -1,5 +1,7 @@
 package shopToys.model;
 
+import java.util.Objects;
+
 public class Toy {
     public String name; //название игрушки
     public long id; //уникальный номер товара (игрушки)
@@ -36,5 +38,17 @@ public class Toy {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Игрушка: %s Цена: %f",name,price);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Toy toy = (Toy) o;
+        return id == toy.id;
+    }
 
 }
