@@ -1,4 +1,4 @@
-package org.example;
+package shopToys;
 
 public class Main {
     public static void main(String[] args) {
