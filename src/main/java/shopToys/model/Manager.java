@@ -28,15 +28,17 @@ public class Manager {
         this.lastName = lastName;
     }
 
-    public ArrayList<Toy> GetToSklad() throws IOException {
-        ArrayList<Toy> toysFromInvoice = new ArrayList<>();
+    public ArrayList<ToyPosition> GetToSklad() throws IOException {
+        ArrayList<ToyPosition> toysFromInvoice = new ArrayList<>();
         BufferedReader csvReader = new BufferedReader(new FileReader("invoice.csv"));
         String row;
         while ((row = csvReader.readLine()) != null) {
             String[] data = row.split(";");
-            toysFromInvoice.add(new Toy(Long.getLong(data[1]),data[2],data[3],Double.parseDouble(data[4])));
+            toysFromInvoice.add(new ToyPosition(new Toy(Long.parseLong(data[1]),data[2],data[3],Double.parseDouble(data[4])),Integer.parseInt(data[5])));
         }
         csvReader.close();
         return toysFromInvoice;
     }
+
+
 }

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50a7247a-82e6-4087-8ced-e9531f94814a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/shopToys/model/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shopToys/model/invoice.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shopToys/invoice.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shopToys/model/ToyPosition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/shopToys/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopToys/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shopToys/model/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopToys/model/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopToys/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shopToys/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shopToys/model/invoice.csv" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +41,56 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Борисович/Desktop/Обучение_на_GB/ShopToys/src/main/java/shopToys",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "RainbowCSV.Settings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Борисович\Desktop\Обучение_на_GB\ShopToys\src\main\java\shopToys" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Борисович\Desktop\Обучение_на_GB\ShopToys" />
+      <recent name="C:\Users\Борисович\Desktop\Обучение_на_GB\ShopToys\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shopToys.Main" />
+      <module name="ShopToys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shopToys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Manager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shopToys.model.Manager" />
+      <module name="ShopToys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shopToys.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Manager" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
