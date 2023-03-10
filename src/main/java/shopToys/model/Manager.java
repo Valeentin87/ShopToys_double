@@ -66,5 +66,10 @@ public class Manager {
         return toysFromInvoice;
     }
 */
+    public void PutInShowcase() throws IOException {
+        mapperToy.UpdateAssortment(mapperToy.GetToSklad());
+    }
+
+
 
 }

@@ -39,6 +39,7 @@ public class MapperToy {
                     append(";").append(newToy.toy.getPrice()).append(";").append(newToy.count).append(";\n");
             printWriter.write(sb.toString());
         }
+        printWriter.close();
 
     }
 
