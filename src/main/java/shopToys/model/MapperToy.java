@@ -89,6 +89,9 @@ public class MapperToy {
 
         printWriter.flush();
         printWriter.close();
+        File srs = new File("showcaseResult.csv");
+        File dst = new File("showcase.csv");
+        FileOperation.copyFile(srs,dst);
     return result;
     }
 

@@ -1,9 +1,6 @@
 package shopToys;
 
-import shopToys.model.Manager;
-import shopToys.model.MapperToy;
-import shopToys.model.Toy;
-import shopToys.model.ToyPosition;
+import shopToys.model.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
