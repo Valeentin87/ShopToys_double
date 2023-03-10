@@ -1,9 +1,17 @@
 package shopToys.model;
 
+/**
+ * Класс Позиция товара (показывает сколько товара под каждым наименованием)
+ */
 public class ToyPosition {
     Toy toy; //игрушка, хранящаяся на складе
     int count; //количество игрушек на складе
 
+    /**
+     * Конструктор
+     * @param toy игрушка
+     * @param count количество игрушек конкретного наименования
+     */
     public ToyPosition(Toy toy, int count) {
         this.toy = toy;
         this.count = count;

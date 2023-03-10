@@ -1,12 +1,22 @@
 package shopToys.model;
 
 import java.util.Objects;
-
+/**
+ * Класс игрушка
+ * */
 public class Toy {
-    public String name; //название игрушки
-    public String type; // тип игрушки
-    public long id; //уникальный номер товара (игрушки)
-    double price; //цена товара
+    public String name;
+    public String type;
+    public long id;
+    double price;
+
+    /**
+     * Конструктор
+     * @param id поле: уникальный номер товара (игрушки)
+     * @param name поле: название игрушки
+     * @param type поле: тип игрушки
+     * @param price поле: цена товара
+     */
     public Toy(long id, String name, String type, double price){
         this.id = id;
         this.name = name;
