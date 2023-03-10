@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * Класс Менеджер
  */
 public class Manager {
+    MapperToy mapperToy;
     public String firstName;
     public String lastName;
 
@@ -15,9 +16,18 @@ public class Manager {
      * @param firstName Имя менеджера
      * @param lastName  Фаимлия менеджера
      */
-    public Manager(String firstName, String lastName) {
+    public Manager(String firstName, String lastName, MapperToy mapperToy) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.mapperToy = mapperToy;
+    }
+
+    public MapperToy getMapperToy() {
+        return mapperToy;
+    }
+
+    public void setMapperToy(MapperToy mapperToy) {
+        this.mapperToy = mapperToy;
     }
 
     public String getFirstName() {
@@ -41,6 +51,8 @@ public class Manager {
      * @return возвращает список позиций (наименование - количество) товаров
      * @throws IOException в том случае, если отсутствует файл (накладная)
      */
+
+    /*
     public ArrayList<ToyPosition> GetToSklad() throws IOException {
         ArrayList<ToyPosition> toysFromInvoice = new ArrayList<>();
         BufferedReader csvReader = new BufferedReader(new FileReader("invoice.csv"));
@@ -53,6 +65,6 @@ public class Manager {
         csvReader.close();
         return toysFromInvoice;
     }
-
+*/
 
 }
