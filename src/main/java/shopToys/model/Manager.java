@@ -78,8 +78,8 @@ public class Manager {
         return toysFromInvoice;
     }
 */
-    public void PutInShowcase() throws IOException {
-        mapperToy.UpdateAssortment(mapperToy.GetAssortment("invoice.csv"),mapperToy.GetAssortment("showcase.csv"),
+    public ArrayList<ToyPosition> PutInShowcase() throws IOException {
+       return mapperToy.UpdateAssortment(mapperToy.GetAssortment("invoice.csv"),mapperToy.GetAssortment("showcase.csv"),
                 "showcaseResult.csv");
     }
 
