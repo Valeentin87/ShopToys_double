@@ -2,6 +2,7 @@ package shopToys.model;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Класс Менеджер
@@ -11,15 +12,18 @@ public class Manager {
     public String firstName;
     public String lastName;
 
+    public String date;
+
     /**
      * Конструктор
      * @param firstName Имя менеджера
      * @param lastName  Фаимлия менеджера
      */
-    public Manager(String firstName, String lastName, MapperToy mapperToy) {
+    public Manager(String firstName, String lastName, MapperToy mapperToy,String date) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.mapperToy = mapperToy;
+        this.date = date;
     }
 
     public MapperToy getMapperToy() {
@@ -46,6 +50,14 @@ public class Manager {
         this.lastName = lastName;
     }
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     /**
      * Метод, позволяющий отправить товары, полученные по накладной на склад
      * @return возвращает список позиций (наименование - количество) товаров
@@ -67,7 +79,8 @@ public class Manager {
     }
 */
     public void PutInShowcase() throws IOException {
-        mapperToy.UpdateAssortment(mapperToy.GetToSklad());
+        mapperToy.UpdateAssortment(mapperToy.GetAssortment("invoice.csv"),mapperToy.GetAssortment("showcase.csv"),
+                "showcaseResult.csv");
     }
 
 
