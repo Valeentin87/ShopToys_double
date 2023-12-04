@@ -1,5 +1,5 @@
 package shopToys;
-
+// добавил строку с комментарием;
 import shopToys.model.*;
 
 import java.io.IOException;
