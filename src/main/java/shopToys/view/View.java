@@ -1,5 +1,5 @@
 package shopToys.view;
-
+// добавил строку с комментарием в удаленный репозиторий
 import java.util.Scanner;
 
 public class View {
